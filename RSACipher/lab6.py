@@ -8,7 +8,6 @@ class RSAInterface:
         self.root = root
         self.root.title("RSA Cryptographic System")
 
-        # Key generation section
         self.key_frame = tk.Frame(self.root)
         self.key_frame.pack(pady=10)
 
@@ -23,14 +22,12 @@ class RSAInterface:
         self.generate_key_btn = tk.Button(self.key_frame, text="Generate Keys", command=self.generate_keys)
         self.generate_key_btn.grid(row=2, columnspan=2, pady=10)
 
-        # Display keys
         self.public_key_label = tk.Label(self.root, text="Public Key: ")
         self.public_key_label.pack()
 
         self.private_key_label = tk.Label(self.root, text="Private Key: ")
         self.private_key_label.pack()
 
-        # Encryption section
         self.encrypt_frame = tk.Frame(self.root)
         self.encrypt_frame.pack(pady=10)
 
@@ -44,7 +41,6 @@ class RSAInterface:
         self.ciphertext_label = tk.Label(self.root, text="Ciphertext: ")
         self.ciphertext_label.pack()
 
-        # Decryption section
         self.decrypt_frame = tk.Frame(self.root)
         self.decrypt_frame.pack(pady=10)
 
